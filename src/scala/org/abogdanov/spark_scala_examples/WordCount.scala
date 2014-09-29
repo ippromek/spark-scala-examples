@@ -1,4 +1,4 @@
-package org.abogdanov
+package org.abogdanov.spark_scala_examples
 
 import org.apache.spark.SparkContext._
 import org.apache.spark.{SparkConf, SparkContext}
@@ -8,7 +8,7 @@ object WordCount {
 
 		if (args.length < 2) {
 			System.err.println("Usage: \n" +
-				"./bin/spark-submit --class org.abogdanov.WordCount ./<jarName>")
+				"./bin/spark-submit --class org.abogdanov.spark_scala_examples.WordCount ./<jarName>")
 			System.exit(1)
 		}
 

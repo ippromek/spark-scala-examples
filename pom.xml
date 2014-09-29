@@ -68,7 +68,7 @@
 				</executions>
 				<configuration>
 
-					<mainClass>org.abogdanov.WordCount</mainClass>
+					<mainClass>org.abogdanov.spark_scala_examples.WordCount</mainClass>
 					<sourceDir>src/scala</sourceDir>
 					<jvmArgs>
 						<jvmArg>-Xms64m</jvmArg>

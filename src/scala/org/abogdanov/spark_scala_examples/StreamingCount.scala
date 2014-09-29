@@ -1,4 +1,4 @@
-package org.abogdanov
+package org.abogdanov.spark_scala_examples
 
 import org.apache.spark.SparkConf
 import org.apache.spark.storage.StorageLevel
@@ -10,7 +10,7 @@ object StreamingCount {
 
 		if (args.length < 2) {
 			System.err.println("Usage: \n" +
-				"./bin/spark-submit --class org.abogdanov.StreamingCount ./<jarName> <hostname> <port>")
+				"./bin/spark-submit --class org.abogdanov.spark_scala_examples.StreamingCount ./<jarName> <hostname> <port>")
 			System.exit(1)
 		}
 

@@ -6,9 +6,11 @@ import org.apache.spark.{SparkConf, SparkContext}
 object WordCount {
 	def main(args: Array[String]) {
 
+		// Check whether input arguments are present
 		if (args.length < 2) {
 			System.err.println("Usage: \n" +
-				"./bin/spark-submit --class org.abogdanov.spark_scala_examples.WordCount ./<jarName>")
+				"./bin/spark-submit --class org.abogdanov.spark_scala_examples.WordCount " +
+				"./<jarName> <inputFile> <outputDir>")
 			System.exit(1)
 		}
 

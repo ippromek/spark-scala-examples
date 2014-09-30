@@ -8,6 +8,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 object StreamingCount {
 	def main(args: Array[String]) {
 
+		// Check whether input arguments are present
 		if (args.length < 2) {
 			System.err.println("Usage: \n" +
 				"./bin/spark-submit --class org.abogdanov.spark_scala_examples.StreamingCount ./<jarName> <hostname> <port>")
